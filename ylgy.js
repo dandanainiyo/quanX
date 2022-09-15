@@ -15,7 +15,7 @@ for(var n=1;n<=i;n++){
     tmp+=a[n]
     
 }
-  obj.data.map_data.blockTypeData={"1":tmp}
+  obj.data.map_data["blockTypeData"]={"1":tmp}
   $done({ body: JSON.stringify(obj) })
 } else {
   $done({})
